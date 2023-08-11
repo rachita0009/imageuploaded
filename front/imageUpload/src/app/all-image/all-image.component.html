@@ -1,0 +1,16 @@
+
+<h3>All images</h3>
+<hr />
+<div *ngIf="images.length > 0">
+  <div *ngFor="let image of images" class="cover">
+    <!-- <pre>
+      {{image.cover[0].original.path | json}}
+      </pre> -->
+    <img [src]="image.cover[0].original.path" />
+    <img [src]="image.cover[0].thumbnail.path" />
+    <div>
+      <!-- <span>{{ image.name }}</span> -->
+    </div>
+  </div>
+ 
+</div>
